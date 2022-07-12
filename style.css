@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
 html {
-    font-size: 16px;
-    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-family: Inter, sans-serif;
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desat-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --slightly-trans-white-1: hsla(0, 0%, 100%, 0.75);
+    --slightly-trans-white-2:hsla(0, 0%, 100%, 0.6);
   }
   body {
-    background-color: #0a0c1b;
-    color: white;
+    background-color: var(--very-dark-blue);
+    color: var(--white);
   }
   main {
     margin: 1rem;
@@ -13,10 +21,10 @@ html {
     flex-direction: column;
     max-width: 100%;
     margin-top: 5rem;
-    border: 1px solid #0a0c1b;
+    border: 1px solid var(--dark-desat-blue);
     overflow: hidden;
     border-radius: 10px;
-    background: #1c1938;
+    background: var(--dark-desat-blue);
   }
   
   .header-image {
@@ -32,7 +40,7 @@ html {
     display: block;
   }
   .overlay:before {
-    background: rgba(130, 64, 163, 0.473);
+    background: hsla(277, 64%, 61%, 0.527);
     content: "";
     display: block;
     position: absolute;
@@ -48,24 +56,26 @@ html {
     padding: 2rem 1.5rem 0rem 1.5rem;
   }
   h1 {
-    font-weight: 600;
-    font-size: 1.75rem;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 0px;
     padding-bottom: 1rem;
   }
   .highlight {
-    color: #9c5fc6;
+    color: var(--soft-violet);
   }
   .mid-text {
     display: block;
-    background: #1c1938;
+    /* background: #1c1938; */
     padding: 0rem 2rem;
-    font-family: "Calibri Light", sans-serif;
-    font-size: 1.1rem;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
     text-align: center;
-    line-height: 1.5rem;
-    color: #d0c3da;
+    line-height: 1.7rem;
+    color: var(--slightly-trans-white-2);
   }
   .stats {
     display: flex;
@@ -73,20 +83,20 @@ html {
     background: #1c1938;
     padding: 1rem 1rem 1rem 1rem;
     text-align: center;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 700;
     font-size: 1.5rem;
+    font-family: Inter, sans-serif;
   }
   .stats div {
     padding: 1rem;
   }
   .stats-desc {
-    font-family: "Calibri Light", sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 400;
     display: block;
     margin-top: 0.3rem;
-    color: #d0c3da;
+    color: var(--slightly-trans-white-2);
   }
   
   .attribution {
